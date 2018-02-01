@@ -1,0 +1,55 @@
+html,body {
+  padding:0;
+  margin:0;
+}
+
+body {
+  background: #FAA275;
+  font-family: "Gill Sans", sans-serif;
+  text-align: center;
+}
+
+input#newTodo {
+  padding:1em 2em 1em .5em;
+  font-size: 1em;
+  outline: none;
+}
+
+input[type='checkbox'] {
+  transform: scale(2) translateY(2px);
+  float:right;
+}
+
+button {
+  padding:1em 2em;
+  font-size: 1em;
+  outline: none;
+  background: #5398BE;
+  box-shadow: none;
+  border: none;
+}
+
+button:hover {
+  background: #36637C;
+}
+
+.container {
+  margin:1em auto;
+  background: #ccc;
+  max-width: 500px;
+  height: 600px;
+  padding: .2em;
+}
+
+.list-item {
+  background: #5398BE;
+  color: #fff;
+  padding: .4em;
+  margin: .3em;
+  font-size: 1.5em;
+  letter-spacing: .05em;
+}
+
+.strike {
+  text-decoration: line-through;
+}
