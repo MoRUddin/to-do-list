@@ -3,14 +3,19 @@ $(document).ready(function(){
   var $newTodo = $('#newTodo');
   var $submit = $('#submit');
   var $toDoList = $('#toDoList');
-  var $checkbox;
 
   $submit.on('click', function(event){
-    $toDoList.append('<li class="list-item">'+$newTodo.val()+'<input type="checkbox" class="checkbox"></li>').addClass("list-item");
-  })
+    $toDoList.append('<li class="list-item">'+$newTodo.val()+'<input type="checkbox" class="checkbox list-item"><button type="button" class=dButton>del</button></li>');
 
-  $('.checkbox').on('click', function(){
-    $('.list-item').css('text-decoration', 'line-through');
-  })
+    $('.checkbox').unbind();
+    $('.checkbox').on('click', function(event){
+      $(this.parentElement).toggleClass('strike');
+    });
+
+    $('.dButton').unbind();
+    $('.dButton').on('click', function(event){
+      console.log('hi');
+    })
+  });
 
 });
