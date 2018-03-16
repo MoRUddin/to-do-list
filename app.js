@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     $('.dButton').unbind();
     $('.dButton').on('click', function(event){
-      console.log('hi');
+      $(this.parentElement).remove();
     })
   });
 
